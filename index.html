@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurify</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+    <!-- 1. Header Section -->
+    <section class="header-section">
+        <div class="header-overlay">
+            <a href="#" class="d-flex align-items-start mb-4 wp-logo">
+                <img class="logo-header" src="./assets/images/logo.png" alt="">
+            </a>
+            <h1>Finding the perfect car insurance can feel like a never-ending road trip.</h1>
+            <p>Compare home and auto rates from top insurance companies.</p>
+            <form class="zipcode-form">
+                <input type="text" placeholder="Enter zipcode" class="form-control">
+                <button type="submit" class="btn">ENTER ZIPCODE</button>
+            </form>
+            <!-- Bổ sung phần dưới input -->
+            <div class="mt-4 text-center">
+                <div class="d-flex justify-content-between align-items-center gap-4">
+                    <div class="d-none d-md-block">
+                        <h6 class="mb-0">250+</h6>
+                        <p class="mb-0">Expert ready to help</p>
+                    </div>
+                    <div class="wp-trustpilot gap-2">
+                        <h6 class="mb-0">
+                            <div class="d-flex align-items-center gap-2">
+                                <img src="/assets/images/trustpilot.png" alt=""
+                                    style="border-bottom: 1px solid #a7a7a7;">
+                                <img src="/assets/images/5-stars.png" alt="">
+                            </div>
+                        </h6>
+                        <p class="mb-0 text-decoration-underline"><span class="fw-bold">4.8</span> out of
+                            <span class="fw-bold">5</span> Excellent rating
+                        </p>
+                    </div>
+
+
+
+                    <div class="d-none d-md-block">
+                        <h6 class="mb-0">2,500+</h6>
+                        <p class="mb-0">Peer-reviewed articles</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4 d-block d-md-none">
+                    <!-- Cột 1 -->
+                    <div class="col-md-6">
+                        <h6 id="counter1" class="counter" data-target="250">0</h6>
+                        <p class="mb-0">Expert ready to help</p>
+                    </div>
+
+                    <!-- Cột 2 -->
+                    <div class="col-md-6">
+                        <h6 id="counter2" class="counter" data-target="2500">0</h6>
+                        <p class="mb-0">Peer-reviewed articles</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2. Logo Section -->
+    <section class="logo-section  py-2 py-4" style="background-color: #FCF6F4;">
+        <div class="container">
+            <h5 class="text-start mb-0">As featured in</h5>
+            <div id="logoCarousel" class="carousel slide d-none d-md-flex" data-bs-ride="carousel"
+                data-bs-interval="2000">
+                <div class="carousel-inner text-center py-2 ">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-1.png" class="mx-2" alt="Logo 2">
+                            <img src="./assets/images/image-2.png" class="mx-2" alt="Logo 3">
+                            <img src="./assets/images/image-3.png" class="mx-2" alt="Logo 3">
+                            <img src="./assets/images/image-4.png" class="mx-2" alt="Logo 3">
+                            <img src="./assets/images/image-5.png" class="mx-2" alt="Logo 3">
+                            <img src="./assets/images/image-6.png" class="mx-2" alt="Logo 3">
+                            <img src="./assets/images/image-7.png" class="mx-2" alt="Logo 3">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-9.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-10.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-11.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-12.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-13.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-14.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-15.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="logoCarousel" class="carousel slide d-md-none d-flex" data-bs-ride="carousel"
+                data-bs-interval="2000">
+                <!-- Mobile -->
+                <div class="carousel-inner text-center py-2">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-1.png" class="mx-2" alt="Logo 2">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-2.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-3.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-4.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-5.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-6.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-7.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-8.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-9.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-10.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-11.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-12.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-13.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/image-14.png" class="mx-2" alt="Logo 1">
+                            <img src="./assets/images/image-15.png" class="mx-2" alt="Logo 1">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 3. Personalized Quotes Section -->
+    <section class="quotes-section">
+        <div class="container text-center py-5">
+            <h2 class="mb-4">Get personalized quotes in 5 minutes or less</h2>
+            <div class="row justify-content-around mx-3">
+                <!-- Column 1 -->
+                <div class="col-md-4" style="padding: 30px;">
+                    <div class="">
+                        <img src="./assets/images/compare-personal.png" alt="Logo 1" class="img-fluid">
+                    </div>
+                    <h5 class="feature-title">Compare personalized quotes</h5>
+                    <p class="feature-description">Answer a couple of questions, we’ll provide accurate real-time
+                        quotes.</p>
+                    <button class="btn btn-custom btn-lg px-4 d-flex">Get My Quotes</button>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-md-4" style="padding: 30px;">
+                    <div class="">
+                        <img src="/assets/images/get-all.png" alt="Discount Icon" class="img-fluid">
+                    </div>
+                    <h5 class="feature-title">Get all discounts in one place</h5>
+                    <p class="feature-description">Get all the discounts you qualify for in one place. Find out which
+                        insurer
+                        will provide you with the most.</p>
+                    <button class="btn btn-custom btn-lg px-4  d-flex">Get My Quotes</button>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-md-4" style="padding: 30px;">
+                    <div class="">
+                        <img src="assets/images/buy-online.png" alt="Payment Icon" class="img-fluid">
+                    </div>
+                    <h5 class="feature-title">Buy online or on the phone</h5>
+                    <p class="feature-description">Get the policy you want the way you want it: buy online or schedule a
+                        call
+                        with an agent.</p>
+                    <button class="btn btn-custom btn-lg px-4  d-flex">Get My Quotes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Insurify Work Section -->
+    <section class="insurify-work-section">
+        <div class="container text-center py-5">
+            <h2 class="mb-5">How Does Insurify Work to Save You Money?</h2>
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-md-4">
+                    <div class="feature-box active" onclick="toggleFeature(1)">
+                        <img src="assets/images/save-on.png" alt="Icon 1" class="feature-icon">
+                        <div class="insurify-title">Save on Average $800 per year</div>
+                        <p class="insurify-description" id="feature-1">
+                            Drivers who switch with Insurify save an average of $800 per year. Ready to join them?
+                        </p>
+                        <div class="mt-3  button-down d-none">
+                            <i class="bi bi-chevron-down toggle-indicator" style="color: #FF3E00;"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4">
+                    <div class="feature-box" onclick="toggleFeature(2)">
+                        <img src="assets/images/200+insurers.png" alt="Icon 2" class="feature-icon">
+                        <div class="insurify-title">200+ Insurers. One Powerful Search</div>
+                        <p class="insurify-description d-none" id="feature-2">
+                            Find the best insurers in one place with a simple search tailored to your needs.
+                        </p>
+                        <div class="mt-3 button-down">
+                            <i class="bi bi-chevron-down toggle-indicator" style="color: #FF3E00;"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-4">
+                    <div class="feature-box" onclick="toggleFeature(3)">
+                        <img src="assets/images/quotes.png" alt="Icon 3" class="feature-icon">
+                        <div class="insurify-title">Quotes in Minutes. Savings in Sight</div>
+                        <p class="insurify-description d-none" id="feature-3">
+                            Get accurate quotes in just minutes and see your savings instantly.
+                        </p>
+                        <div class="mt-3  button-down">
+                            <i class="bi bi-chevron-down toggle-indicator" style="color: #FF3E00;"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-md-4">
+                    <div class="feature-box" onclick="toggleFeature(4)">
+                        <img src="assets/images/always.png" alt="Icon 4" class="feature-icon">
+                        <div class="insurify-title">Always Free. Always Transparent</div>
+                        <p class="insurify-description d-none" id="feature-4">
+                            Our services are always free and fully transparent to help you make informed decisions.
+                        </p>
+                        <div class="mt-3  button-down">
+                            <i class="bi bi-chevron-down toggle-indicator" style="color: #FF3E00;"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="col-md-4">
+                    <div class="feature-box" onclick="toggleFeature(5)">
+                        <img src="assets/images/your-primacy.png" alt="Icon 5" class="feature-icon">
+                        <div class="insurify-title">Your Privacy is Our Priority</div>
+                        <p class="insurify-description d-none" id="feature-5">
+                            We take privacy seriously and ensure your data is protected at all times.
+                        </p>
+                        <div class="mt-3  button-down">
+                            <i class="bi bi-chevron-down toggle-indicator" style="color: #FF3E00;"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="col-md-4">
+                    <div class="feature-box" onclick="toggleFeature(6)">
+                        <img src="assets/images/your-way.png" alt="Icon 6" class="feature-icon">
+                        <div class="insurify-title">Your Way. Online or With an Agent</div>
+                        <p class="insurify-description d-none" id="feature-6">
+                            Choose the way you want to interact, either online or with a licensed agent.
+                        </p>
+                        <div class="mt-3  button-down">
+                            <i class="bi bi-chevron-down toggle-indicator" style="color: #FF3E00;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-main">Find Savings Now</button>
+        </div>
+    </section>
+
+    <!-- 5. Our partners Section -->
+    <section class="partners-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-3">Our Partners</h2>
+            <p class="mb-3">
+                We work with 200+ top insurance companies to find the best match for you
+            </p>
+            <div class="row g-2">
+                <!-- Partner 1 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-1.png" alt="Travelers" class="partner-logo img-fluid">
+                </div>
+                <!-- Partner 2 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-2.png" alt="MileAuto" class="partner-logo img-fluid">
+                </div>
+                <!-- Partner 3 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-3.png" alt="21st Century Insurance" class="partner-logo img-fluid">
+                </div>
+                <!-- Partner 4 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-4.png" alt="USAA" class="partner-logo img-fluid">
+                </div>
+                <!-- Add more partners -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-5.png" alt="The General" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-6.png" alt="Amica" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-7.png" alt="Elephant" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-8.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-9.1.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-9.2.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-9.3.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-9.4.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-10.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-11.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-11.1.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-11.2.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-12.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <img src="assets/images/partner-13.png" alt="Mercury Insurance" class="partner-logo img-fluid">
+                </div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 6. Quotes and counting Section -->
+
+    <section class="review-slider">
+        <div class="container my-5">
+            <h2 class="text-center">Over 18 million quotes and counting</h2>
+            <p class="text-center">See why millions of people choose us for their insurance needs.</p>
+            <p class="text-center">We have outstanding reviews on Trustpilot, BBB, and Google!</p>
+
+            <div id="testimonialSlider" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-around text-center wp-carousel-item" style="margin: 0 35px;">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                All the quotes I received were reasonable and competitive!...
+
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                The site was user friendly and the process was simple! I was able to
+                                                speak to an insurance agent right away and
+                                                purchased auto insurance the same day. Thank you Insurify!
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 10, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer-1.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;">John Smith</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                That was easy!
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                That was easy! Sometimes modern technology does make life a bit simpler.
+                                                I saved about $70/month by using insurify. The
+                                                process was easy and fairly quick taking place mostly via text. The CSR
+                                                who helped me...
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 06, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer-2.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;">Francesca</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-around text-center wp-carousel-item">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                All the quotes I received were reasonable and competitive!...
+
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                Joshua, was quick and efficient
+                                                in his work to finalize my new insurance contract. I highly recommend
+                                                checking to see if you can save some money.
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 10, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer-3.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;">John Smith</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                All the quotes I received were reasonable and competitive!...
+
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                The site was user friendly and the process was simple! I was able to
+                                                speak to an insurance agent right away and
+                                                purchased auto insurance the same day. Thank you Insurify!
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 10, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;"> Ricci</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-carousel d-flex align-items-center justify-content-center mt-4"
+                    style="margin: 0 65px; background-color: #FFFFFF;">
+                    <p class="text-center" style="font-size: 16px;">
+                        <strong>
+                            4.7
+                        </strong> out of
+                        <strong>
+                            5
+                        </strong> on
+
+                        <strong>
+                            <span class="text-decoration-underline">5775 reviews</span>. See all reviews at
+                        </strong>
+                        <img src="assets/images/trustpilot-have-color.png" alt="">
+                    </p>
+                </div>
+                <button class="carousel-control-prev d-none d-md-block" type="button"
+                    data-bs-target="#testimonialSlider" data-bs-slide="prev">
+                    <img src="assets/images/button-prev.png" alt="">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none d-md-block" type="button"
+                    data-bs-target="#testimonialSlider" data-bs-slide="next">
+                    <img src="assets/images/button-next.png" alt="">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="testimonialSlider" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-around text-center wp-carousel-item" style="margin: 0 35px;">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                All the quotes I received were reasonable and competitive!...
+
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                The site was user friendly and the process was simple! I was able to
+                                                speak to an insurance agent right away and
+                                                purchased auto insurance the same day. Thank you Insurify!
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 10, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer-1.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;">John Smith</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row justify-content-around text-center wp-carousel-item" style="margin: 0 35px;">
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                That was easy!
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                That was easy! Sometimes modern technology does make life a bit simpler.
+                                                I saved about $70/month by using insurify. The
+                                                process was easy and fairly quick taking place mostly via text. The CSR
+                                                who helped me...
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 06, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer-2.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;">Francesca</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-around text-center wp-carousel-item">
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                All the quotes I received were reasonable and competitive!...
+
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                The site was user friendly and the process was simple! I was able to
+                                                speak to an insurance agent right away and
+                                                purchased auto insurance the same day. Thank you Insurify!
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 10, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;"> Ricci</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-around text-center wp-carousel-item">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header d-flex justify-content-between align-items-center"
+                                            style="background: none; border-bottom: none;">
+                                            <div class="col-7 text-start">
+                                                <img src="assets/images/5-start-1.png" alt="">
+                                                <div class="mt-3">
+                                                    <p>
+                                                        <i class="bi bi-check-circle-fill" style="color: #686868;"></i>
+                                                        <span style="margin-left: 4px;">Invited</span>
+                                                        <span class="mx-3">2 days ago</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img class="text-end img-fluid img-quotes" src="assets/images/2-quotes.png"
+                                                alt="">
+                                        </div>
+
+                                        <div class="text-start card-content">
+                                            <h3 class="">
+                                                All the quotes I received were reasonable and competitive!...
+
+                                            </h3>
+                                            <p class="mt-3 mb-2">
+                                                Joshua, was quick and efficient
+                                                in his work to finalize my new insurance contract. I highly recommend
+                                                checking to see if you can save some money.
+                                            </p>
+                                            <p class="my-4">
+                                                <strong>Date of experience:</strong> January 10, 2025
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex align-items-center card-footer">
+                                        <img src="assets/images/customer-3.png" alt="John Smith"
+                                            class="rounded-circle me-3">
+                                        <div>
+                                            <h5 class="card-title mb-1" style="margin-right: 30px;">John Smith</h5>
+                                            <p class="text-white mb-1 title-address"
+                                                style="text-align: left;font-size: 18px;">
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span class="mx-2">
+                                                    US
+                                                </span> |
+                                                <span class="mx-2">
+                                                    1 review
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <img style="margin-left: 5%;" src="assets/images/flag-us.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-carousel d-flex align-items-center justify-content-center mt-4"
+                    style="margin: 0 65px; background-color: #FFFFFF;">
+                    <p class="text-center" style="font-size: 16px;">
+                        <strong>
+                            4.7
+                        </strong> out of
+                        <strong>
+                            5
+                        </strong> on
+
+                        <strong>
+                            <span class="text-decoration-underline">5775 reviews</span>. See all reviews at
+                        </strong>
+                        <img src="assets/images/trustpilot-have-color.png" alt="">
+                    </p>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialSlider"
+                    data-bs-slide="prev">
+                    <img src="assets/images/button-prev.png" alt="">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialSlider"
+                    data-bs-slide="next">
+                    <img src="assets/images/button-next.png" alt="">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Insurance questions Section -->
+    <section class="insurance-questions-section">
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Car insurance questions</h2>
+            <div class="accordion" id="carInsuranceQuestions">
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="bi bi-chevron-down toggle-indicator mx-2" style="color: #FF3E00;
+                            font-size: 24px;
+                            border-radius: 50px;
+                            width: 50px;
+                            height: 40px;
+                            text-align: center;"></i><span style="line-height: 30px;">What should I do
+                                if I get into a car accident?</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#carInsuranceQuestions">
+                        <div class="accordion-body">
+                            There are important steps you need to take if you ever find yourself in a car accident:
+                            <ul>
+                                <li>Always remember to check you and your passengers for injuries first, then call 911.
+                                </li>
+                                <li>Exchange info with the other driver and take photos. Try to avoid discussions about
+                                    who's at
+                                    fault.</li>
+                                <li>Report the accident to your insurance company by filing a claim.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-chevron-down toggle-indicator mx-2" style="color: #FF3E00;
+                                                        font-size: 24px;
+                                                        border-radius: 50px;
+                                                        width: 50px;
+                                                        height: 40px;
+                                                        text-align: center;"></i><span style="line-height: 30px;">How
+                                much is car
+                                insurance per month? </span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#carInsuranceQuestions">
+                        <div class="accordion-body">
+                            The cost of car insurance per month varies depending on your location, vehicle, age, and
+                            driving
+                            history.
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i
+                                class="bi bi-chevron-down toggle-indicator mx-2" style="color: #FF3E00;
+                                                        font-size: 24px;
+                                                        border-radius: 50px;
+                                                        width: 50px;
+                                                        height: 40px;
+                                                        text-align: center;"></i><span style="line-height: 30px;">
+                                What is a deductible in car insurance? </span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#carInsuranceQuestions">
+                        <div class="accordion-body">
+                            A deductible is the amount of money you agree to pay out-of-pocket before your insurance
+                            kicks in
+                            for a covered claim.
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-chevron-down toggle-indicator mx-2" style="color: #FF3E00;
+                                                    font-size: 24px;
+                                                    border-radius: 50px;
+                                                    width: 50px;
+                                                    height: 40px;
+                                                    text-align: center;"></i><span style="line-height: 30px;"> Does my
+                                auto insurance
+                                cover rental cars?</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#carInsuranceQuestions">
+                        <div class="accordion-body">
+                            Many auto insurance policies extend to rental cars, but you should check your policy to be
+                            sure.
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i class="bi bi-chevron-down toggle-indicator mx-2" style="color: #FF3E00;
+                                                    font-size: 24px;
+                                                    border-radius: 50px;
+                                                    width: 50px;
+                                                    height: 40px;
+                                                    text-align: center;"></i><span style="line-height: 30px;"> What is
+                                gap insurance
+                                for cars? </span>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#carInsuranceQuestions">
+                        <div class="accordion-body">
+                            Gap insurance covers the difference between the car's actual cash value and the balance
+                            still owed
+                            on your loan or lease.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer Section -->
+    <!-- Ready to Save Section -->
+    <section class="ready-to-save py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Ready to Save?</h2>
+            <div class="input-group justify-content-center">
+                <input type="text" class="form-control custom-input w-50" placeholder="Enter zipcode">
+                <button class="btn custom-btn px-4">ENTER ZIPCODE</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer  pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Insurify Info -->
+                <div class="col-md-3 px-5" style="
+    /* font-family: Urbanist; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    /* text-underline-position: from-font; */
+    /* text-decoration-skip-ink: none; */
+">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid"
+                        style="max-width: 150px;margin-bottom: 11px;">
+                    <p class="small">
+                        Insurify Insurance Agency is a licensed insurance agency in 50 states and DC.
+                    </p>
+                    <p class="small">
+                        Average potential savings based on initial quotes received by 183,234 customers seeking
+                        insurance
+                        through Insurify. Actual savings may vary depending on state of residence, individual
+                        circumstances,
+                        coverage selections, and insurance provider. Savings results are not guaranteed.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div>
+                </div>
+                <!-- Company Links -->
+                <div class="col-md-2">
+                    <h6 class="fw-bold" style="
+    /* font-family: Urbanist; */
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    /* text-underline-position: from-font; */
+    /* text-decoration-skip-ink: none; */
+">Company</h6>
+                    <ul class="list-unstyled small" style="
+    /* font-family: Urbanist; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    /* text-underline-position: from-font; */
+    /* text-decoration-skip-ink: none; */
+">
+                        <li><a href="#" class="text-dark text-decoration-none">Company</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">About us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Editorial Team</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Editorial Guidelines</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Terms &amp; Services</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Press</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Careers</a></li>
+                    </ul>
+                </div>
+                <!-- Resources Links -->
+                <div class="col-md-2">
+                    <h6 class="fw-bold" style="
+    /* font-family: Urbanist; */
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    /* text-underline-position: from-font; */
+    /* text-decoration-skip-ink: none; */
+">Resource</h6>
+                    <ul class="list-unstyled small" style="
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+">
+                        <li><a href="#" class="text-dark text-decoration-none">Compare car insurance</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Insurance calculator</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Best car insurance sites</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Blog Insights</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Report</a></li>
+                    </ul>
+                </div>
+                <!-- Insurance by City/State -->
+                <div class="col-md-5">
+                    <h6 class="fw-bold" style="
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+">Car Insurance by City</h6>
+                    <p class="small" style="
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+">
+                        Atlanta, GA | Charlotte, NC | Chicago, IL | Dallas, TX | Denver, CO | Houston, TX
+                    </p>
+                    <h6 class="fw-bold" style="
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+">Car Insurance by State</h6>
+                    <p class="small" style="
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+">
+                        AL | AK | AZ | CA | CO | CT | DC | DE | FL | GA | HI | IL | IN
+                    </p>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="text-center mt-4 small text-dark" style="
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+">
+                © 2025 Insurify, Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>

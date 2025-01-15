@@ -1,0 +1,238 @@
+@media (max-width: 1024px) {
+    #testimonialSlider {
+        margin: 10px 0px;
+    }
+
+    .img-quotes {
+        width: 60px;
+    }
+
+    .card {
+        min-height: 525px;
+    }
+
+    .card-body {
+        padding: 25px 9px 0px 9px;
+    }
+
+    .card-footer {
+        padding: 10px 23px 10px 12px;
+    }
+
+    .card-footer img:first-child {
+        width: 80px;
+    }
+
+    .card-title {
+        font-size: 25px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        min-height: 650px;
+    }
+    .header-overlay {
+        top: 24px;
+        left: inherit;
+    }
+    .carousel-item img {
+        max-width: 120px;
+    }
+    .logo-section h5 {
+        margin-left: 0;
+    }
+    .quotes-section h2 {
+        font-size: 35px;
+    }
+    .feature-title {
+        font-size: 16px;
+    }
+    .feature-description {
+        font-size: 15px;
+    }
+
+    .btn-custom {
+        font-size: 16px;
+    }
+
+    .insurify-description {
+        left: -4px;
+        width: 102%;
+        padding: 0px 10px 10px 10px;
+    }
+
+    .feature-box {
+        padding: 0.5rem;
+    }
+
+    .insurify-work-section h2 {
+        font-size: 35px;
+    }
+
+    .insurify-work-section button {
+        padding: 10px 16px 10px 16px;
+        font-size: 16px;
+    }
+
+    .partners-section h2 {
+        margin-left: 0;
+    }
+
+    .partners-section p {
+        width: 44%;
+        margin-left: 0;
+    }
+
+    .wp-carousel-item {
+        padding: 0;
+        margin: 0 !important;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 15px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        margin-right: 0 !important;
+    }
+
+    .title-address i,
+    .title-address span {
+        font-size: 15px;
+    }
+
+    .card-footer img:first-child {
+        width: 65px;
+    }
+}
+
+@media (max-width: 680px) {
+    .header-section {
+        min-height: 560px;
+    }
+    .header-overlay {
+        top: 0;
+        left: 0;
+        padding: 20px;
+        border-radius: 0;
+    }
+
+    .wp-logo {
+        justify-content: center !important;
+    }
+
+    .header-overlay h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .logo-header {
+        width: 180px;
+    }
+
+    .header-overlay p {
+        margin: 18px 0px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .zipcode-form button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .wp-trustpilot {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .carousel-item img {
+        max-width: 160px;
+    }
+
+    .quotes-section h2 {
+        font-size: 30px;
+    }
+
+    .btn-custom {
+        font-size: 20px !important;
+        width: 100%;
+    }
+
+    .insurify-description {
+        left: -4px;
+        width: 101%;
+    }
+
+    .feature-box {
+        margin-bottom: 2.5rem;
+    }
+
+    .insurify-work-section h2 {
+        font-size: 30px;
+    }
+
+    .insurify-work-section button {
+        margin-top: 0;
+    }
+
+    .partners-section h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .partners-section p {
+        width: 88%;
+        text-align: center;
+    }
+
+    .review-slider h2 {
+        font-size: 35px;
+    }
+
+    .carousel-item img {
+        max-width: 100px;
+    }
+
+    .card-header .col-7 .mt-3 p {
+        font-size: 16px;
+    }
+
+    .footer-carousel {
+        margin: 0 30px !important;
+    }
+
+    .insurance-questions-section h2 {
+        font-size: 35px;
+    }
+
+    .ready-to-save h2 {
+        font-size: 35px;
+    }
+
+    .ready-to-save .input-group {
+        /* margin: 0 auto; */
+        width: 100%;
+    }
+
+    .footer {
+        padding-top: 0 !important;
+    }
+    .footer .container .col-md-2,
+    .col-md-5 {
+        padding: 26px 54px !important;
+    }
+}

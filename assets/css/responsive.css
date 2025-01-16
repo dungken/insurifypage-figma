@@ -1,3 +1,19 @@
+@media (max-width: 1400px) {
+    .feature-box {
+        width: 320px;
+    }
+}
+@media (max-width: 1200px) {
+    .wp-feature-box-1,
+    .wp-feature-box-2 {
+        margin: 0;
+    }
+
+    .feature-box {
+        width: 290px;
+    }
+}
+
 @media (max-width: 1024px) {
     #testimonialSlider {
         margin: 10px 0px;
@@ -35,8 +51,11 @@
 
 @media (max-width: 998px) {
     .insurify-description {
-        width: 102%;
-        padding: 20px;
+        padding: 5px;
+    }
+
+    .feature-box {
+        width: 200px;
     }
 }
 
@@ -178,15 +197,9 @@
         width: 100%;
     }
 
-    /* .insurify-description {
-        left: -4px;
-        width: 101%;
-    }
-
     .feature-box {
-        margin-bottom: 2.5rem;
-    } */
-
+        width: 325px;
+    }
     .insurify-work-section h2 {
         font-size: 30px;
     }

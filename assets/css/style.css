@@ -197,20 +197,53 @@ body {
     font-weight: 700;
     line-height: 48px;
 }
+
 /* 4. Insurify Work Section */
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 
 .feature-box {
-    position: relative;
     text-align: center;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    cursor: pointer;
-    overflow: visible;
-    transition: all 0.3s ease-in-out;
+    padding: 1rem;
     border: 1px solid #ff6600;
     border-radius: 8px;
-    z-index: 0;
-    overflow: visible;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    width: 380px;
+    box-sizing: border-box;
+}
+
+.feature-box:hover {
+    box-shadow: 0px 8px 30px rgba(255, 62, 0, 0.2);
+    border: 3px solid #ff3e00;
+    position: absolute;
+    z-index: 5;
+    margin: 0 auto;
+}
+.wp-feature-box-1,
+.wp-feature-box-2 {
+    margin: 0 30px;
+}
+
+.wp-feature-box-2 {
+    position: relative;
+}
+.feature-box:hover .wp-feature-box-2 {
+    z-index: 2;
+}
+
+.insurify-description {
+    padding: 10px 30px 0px 30px;
+    display: none;
+}
+
+.feature-box:hover .insurify-description {
+    display: block;
 }
 
 .feature-box.active {
@@ -225,40 +258,8 @@ body {
     margin-bottom: 1rem;
 }
 
-.feature-box:hover {
-    z-index: 10;
-    border: 3px solid #ff3e00;
-    box-shadow: 0px 8px 30px 0px #ff3e003d;
-    border-bottom: none;
-    transition: border-bottom 0.1s ease, box-shadow 0.5s ease;
-}
-
-.insurify-description {
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    width: 101%;
-    transform: translateX(-50%);
-    background: #fff;
-    padding: 20px 45px 30px 45px;
-    border-radius: 0px 0px 8px 8px;
-    border: 3px solid #ff3e00;
+.feature-box:hover .button-down {
     display: none;
-    z-index: 11;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    opacity: 0;
-    pointer-events: none; /* Tránh vấn đề hover trên text */
-}
-
-.feature-box:hover .insurify-description ~ .button-down {
-    display: none;
-}
-.feature-box:hover .insurify-description {
-    display: block;
-    opacity: 1;
-    transform: translateX(-50%) translateY(100%);
-    border-top: none;
-    pointer-events: auto; /* Kích hoạt tương tác khi hover */
 }
 
 .feature-box.active .insurify-description {

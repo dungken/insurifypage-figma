@@ -140,6 +140,10 @@
     .card-footer img:first-child {
         width: 65px;
     }
+
+    .feature-box:hover {
+        position: inherit;
+    }
 }
 
 @media (max-width: 680px) {
@@ -232,6 +236,7 @@
 
     .footer-carousel {
         margin: 0 30px !important;
+        background-color: none;
     }
 
     .insurance-questions-section h2 {

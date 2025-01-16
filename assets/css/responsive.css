@@ -33,6 +33,13 @@
     }
 }
 
+@media (max-width: 998px) {
+    .insurify-description {
+        width: 102%;
+        padding: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .header-section {
         min-height: 650px;
@@ -62,14 +69,13 @@
     }
 
     .insurify-description {
-        left: -4px;
-        width: 102%;
-        padding: 0px 10px 10px 10px;
+        padding: 10px;
+        width: 101%;
     }
 
-    .feature-box {
+    /* .feature-box {
         padding: 0.5rem;
-    }
+    } */
 
     .insurify-work-section h2 {
         font-size: 35px;
@@ -172,14 +178,14 @@
         width: 100%;
     }
 
-    .insurify-description {
+    /* .insurify-description {
         left: -4px;
         width: 101%;
     }
 
     .feature-box {
         margin-bottom: 2.5rem;
-    }
+    } */
 
     .insurify-work-section h2 {
         font-size: 30px;

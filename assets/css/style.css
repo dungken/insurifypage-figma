@@ -95,10 +95,50 @@ body {
 }
 
 /* 2. Logo Section */
+.logo-section {
+    padding: 15px 0px 5px 0px;
+}
+
+.logo-carousel {
+    overflow: hidden;
+    width: 85%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    animation: scroll-loop 20s linear infinite;
+    width: calc(100% + 200px);
+}
+
+.logo-track img {
+    height: auto;
+    width: 130px;
+    object-fit: contain;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Keyframes tạo hiệu ứng cuộn */
+@keyframes scroll-loop {
+    from {
+        transform: translateX(0);
+        /* Vị trí ban đầu */
+    }
+
+    to {
+        transform: translateX(-100%);
+        /* Cuộn đủ nửa track */
+    }
+}
+
 .logo-section h5 {
     font-size: 14px;
     font-weight: 700;
     margin-left: 60px;
+    margin-top: 15px;
 }
 .carousel-item img {
     max-width: 135px;
@@ -158,22 +198,25 @@ body {
     line-height: 48px;
 }
 /* 4. Insurify Work Section */
+
 .feature-box {
-    border: 1px solid #ffc2ae;
-    border-radius: 8px;
+    position: relative;
     text-align: center;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     cursor: pointer;
-    position: relative;
-    overflow: visible; /* Đảm bảo phần mô tả không bị cắt */
+    overflow: visible;
     transition: all 0.3s ease-in-out;
+    border: 1px solid #ff6600;
+    border-radius: 8px;
+    z-index: 0;
+    overflow: visible;
 }
 
 .feature-box.active {
     border: 3px solid #ff3e00;
     box-shadow: 0px 8px 30px 0px #ff3e003d;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px;
 }
 
 .feature-icon {
@@ -182,28 +225,47 @@ body {
     margin-bottom: 1rem;
 }
 
+.feature-box:hover {
+    z-index: 10;
+    border: 3px solid #ff3e00;
+    box-shadow: 0px 8px 30px 0px #ff3e003d;
+    border-bottom: none;
+    transition: border-bottom 0.1s ease, box-shadow 0.5s ease;
+}
+
 .insurify-description {
     position: absolute;
-    top: 100%;
-    left: -4px;
+    bottom: 2%;
+    left: 50%;
     width: 101%;
+    transform: translateX(-50%);
     background: #fff;
-    padding: 1rem;
-    border-top: 1px solid #ff6600;
-    border-radius: 0 0 8px 8px;
+    padding: 20px 45px 30px 45px;
+    border-radius: 0px 0px 8px 8px;
+    border: 3px solid #ff3e00;
     display: none;
-    z-index: 10;
-    padding: 0px 50px 28px 50px;
-    transition: all 0.3s ease-in-out;
-    margin: 0px 2px;
-    /* width: 415px*/
+    z-index: 11;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none; /* Tránh vấn đề hover trên text */
 }
+
+.feature-box:hover .insurify-description ~ .button-down {
+    display: none;
+}
+.feature-box:hover .insurify-description {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(100%);
+    border-top: none;
+    pointer-events: auto; /* Kích hoạt tương tác khi hover */
+}
+
 .feature-box.active .insurify-description {
     display: block;
     border: 3px solid #ff3e00;
-    border-top: none;
-    padding-top: 0;
-    box-shadow: 1px 9px 0px 9px #fdd9cd3d;
+    border: none;
+    padding-top: 20px;
 }
 
 .insurify-work-section h2 {
@@ -234,6 +296,7 @@ body {
     color: #fff;
     margin-top: 30px;
 }
+
 .insurify-work-section button:hover {
     background: #fd7649;
     color: #fff;

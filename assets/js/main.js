@@ -86,27 +86,9 @@ $(document).ready(function () {
     });
 });
 
-function toggleFeature(featureId) {
-    const featureDescription = document.getElementById(`feature-${featureId}`);
-    const parentBox = featureDescription.closest(".feature-box");
-    const buttonDown = parentBox.querySelector(".button-down"); // Lấy button-down bên trong box hiện tại
-    const isVisible = !featureDescription.classList.contains("d-none");
+// Chọn phần tử container logo
+const track = document.querySelector(".logo-track");
+const logos = track.innerHTML;
 
-    // Ẩn tất cả nội dung mô tả và hiển thị lại mũi tên cho các box khác
-    document
-        .querySelectorAll(".insurify-description")
-        .forEach((desc) => desc.classList.add("d-none"));
-    document
-        .querySelectorAll(".button-down")
-        .forEach((btn) => btn.classList.remove("d-none"));
-    document
-        .querySelectorAll(".feature-box")
-        .forEach((box) => box.classList.remove("active"));
-
-    // Nếu box hiện tại chưa hiển thị nội dung
-    if (!isVisible) {
-        featureDescription.classList.remove("d-none"); // Hiển thị nội dung
-        buttonDown.classList.add("d-none"); // Ẩn mũi tên
-        parentBox.classList.add("active"); // Thêm hiệu ứng active
-    }
-}
+// Nhân đôi nội dung để lấp đầy không gian
+track.innerHTML += logos;

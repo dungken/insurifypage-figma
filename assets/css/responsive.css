@@ -259,4 +259,9 @@
     .col-md-5 {
         padding: 26px 54px !important;
     }
+
+    .wp-trustpilot {
+        display: block;
+        margin: 0 auto;
+    }
 }

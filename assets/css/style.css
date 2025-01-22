@@ -109,7 +109,7 @@ body {
 .logo-track {
     display: flex;
     align-items: center;
-    animation: scroll-loop 20s linear infinite;
+    animation: scroll-loop 5s linear infinite;
     width: calc(100% + 200px);
 }
 
@@ -180,21 +180,41 @@ body {
     line-height: 24px;
     text-align: left;
 }
-
 .btn-custom {
     background-color: #ff3e00;
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
+
 .btn-custom:hover {
     background-color: #ff6e3e;
     color: #fff;
+    animation: shake 0.5s ease; /* Add the shake animation */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .quotes-section h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 48px;
 }
 
@@ -271,7 +291,7 @@ body {
 
 .insurify-work-section h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 48px;
     text-align: center;
 }
@@ -296,12 +316,15 @@ body {
     font-weight: 700;
     color: #fff;
     margin-top: 30px;
+    transition: background-color 0.3s ease;
 }
 
 .insurify-work-section button:hover {
     background: #fd7649;
     color: #fff;
+    animation: shake 0.5s ease;
 }
+
 /* 5. Our partners Section */
 .partners-section {
     /* background-color: #f9f9f9; */
@@ -309,7 +332,7 @@ body {
 
 .partners-section h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     /* line-height: 48px; */
     text-align: left;
     margin-left: 20px;
@@ -372,7 +395,7 @@ body {
 }
 .review-slider h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 48px;
 }
 .review-slider p {
@@ -453,7 +476,7 @@ body {
 
 .insurance-questions-section h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 48px;
 }
 .accordion-button::after {
@@ -489,7 +512,7 @@ body {
 .ready-to-save h2 {
     color: #040018;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 48px;
     text-align: center;
 }

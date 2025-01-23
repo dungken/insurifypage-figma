@@ -39,8 +39,9 @@ track.innerHTML += logos;
 
 ////////////////// ANIMATION COUNTER //////////////////
 $(document).ready(function () {
-    function animateCounter(selector, start, end, step, delay) {
+    function animateCounter(selector, start, end, step, totalTime) {
         let currentValue = start;
+        const delay = totalTime / ((end - start) / step); // Calculate delay based on totalTime
 
         const interval = setInterval(() => {
             currentValue += step;
@@ -55,9 +56,9 @@ $(document).ready(function () {
         }, delay);
     }
 
-    // Counter 1
-    animateCounter("#counter1 span", 0, 250, 1, 50);
+    // Counter 1: 0 -> 250 in 2 seconds
+    animateCounter("#counter1 span", 0, 250, 1, 2000);
 
-    // Counter 2
-    animateCounter("#counter2 span", 0, 2500, 10, 50);
+    // Counter 2: 0 -> 2500 in 2 seconds
+    animateCounter("#counter2 span", 0, 2500, 10, 2000);
 });

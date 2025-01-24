@@ -2,6 +2,10 @@
     .feature-box {
         width: 320px;
     }
+
+    .accordion-item:first-of-type .accordion-button {
+        padding: 10px;
+    }
 }
 @media (max-width: 1200px) {
     .wp-feature-box-1,
@@ -25,6 +29,7 @@
 
     .card {
         min-height: 525px;
+        margin: 0;
     }
 
     .card-body {
@@ -218,12 +223,17 @@
     }
 
     .partners-section p {
-        width: 88%;
+        width: 95%;
         text-align: center;
+        margin: 0 auto;
     }
 
     .review-slider h2 {
         font-size: 35px;
+    }
+    .review-slider .sub-title {
+        margin: 0 auto;
+        width: 88%;
     }
 
     .carousel-item img {
@@ -263,5 +273,94 @@
     .wp-trustpilot {
         display: block;
         margin: 0 auto;
+    }
+
+    .partner-logo {
+        width: 85px;
+    }
+
+    .card-footer {
+        justify-content: space-between;
+    }
+
+    .accordion-body {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .review-slider .sub-title {
+        margin: 0 auto;
+        width: 96%;
+        font-size: 14px;
+    }
+
+    .quotes-section h2 {
+        font-size: 26px;
+    }
+
+    .insurify-work-section h2 {
+        font-size: 26px;
+    }
+
+    .partners-section h2 {
+        font-size: 26px;
+    }
+
+    .partners-section p {
+        font-size: 14px;
+    }
+
+    .review-slider h2 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .insurance-questions-section h2 {
+        font-size: 26px;
+    }
+
+    .ready-to-save h2 {
+        font-size: 26px;
+    }
+
+    .custom-input {
+        width: 40% !important;
+    }
+
+    .custom-btn {
+        width: 37%;
+    }
+
+    .btn-custom {
+        font-size: 16px !important;
+    }
+
+    .img-quotes {
+        width: 45px;
+    }
+
+    .card-header .col-7 .mt-3 p {
+        font-size: 14px;
+    }
+
+    .card-footer img:first-child {
+        width: 40px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .carousel-item img:last-child {
+        width: 30px;
+    }
+    .title-address i {
+        font-size: 10px !important;
+        margin: 0 !important;
+    }
+    .title-address span {
+        font-size: 12px !important;
+        margin: 0 !important;
     }
 }

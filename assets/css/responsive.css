@@ -6,7 +6,17 @@
     .accordion-item:first-of-type .accordion-button {
         padding: 10px;
     }
+
+    .card-title {
+        margin: 0 !important;
+        font-size: 26px;
+    }
+
+    .card-content {
+        min-height: 280px;
+    }
 }
+
 @media (max-width: 1200px) {
     .wp-feature-box-1,
     .wp-feature-box-2 {
@@ -15,6 +25,18 @@
 
     .feature-box {
         width: 290px;
+    }
+
+    .card-content {
+        height: 300px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-footer {
+        padding: 10px;
     }
 }
 
@@ -52,6 +74,10 @@
     .carousel-control-next {
         display: none !important;
     }
+
+    .card-content {
+        height: 280px;
+    }
 }
 
 @media (max-width: 998px) {
@@ -61,6 +87,10 @@
 
     .feature-box {
         width: 200px;
+    }
+
+    .card-content {
+        min-height: 360px;
     }
 }
 
@@ -124,6 +154,9 @@
         margin: 0 !important;
     }
 
+    .card-content {
+        min-height: 200px;
+    }
     .card-content h3 {
         font-size: 20px;
     }
@@ -287,6 +320,18 @@
     .accordion-body {
         margin-left: 5px;
     }
+
+    .card-content {
+        min-height: 200px;
+    }
+
+    .card-content p:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .card-body {
+        padding: 44px 25px 0px 25px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -363,5 +408,13 @@
     .title-address span {
         font-size: 12px !important;
         margin: 0 !important;
+    }
+
+    .card-body {
+        padding: 15px 15px 0px 15px;
+    }
+
+     .card-content {
+        min-height: 350px;
     }
 }
